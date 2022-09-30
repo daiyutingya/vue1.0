@@ -38,14 +38,14 @@ export const constantRouterMap = [
     component: Layout,
     meta: {
       title: "首页",
-      icon: "iconshare",
+      icon: "el-icon-delete",
     },
     children: [
       {
         path: "index",
         meta: {
           title: "首页",
-          icon: "iconshare",
+          icon: "el-icon-delete",
           routerType:'leftmenu'
         },
         component: () => import("@/view")
@@ -65,7 +65,7 @@ export const asyncRouterMap = [
     component: Layout,
     meta: {
       title: "个人中心",
-      icon: "iconshare"
+      icon: "el-icon-delete"
     },
     noDropdown: false,
     children: [
@@ -74,7 +74,7 @@ export const asyncRouterMap = [
         name: "pwd",
         meta: {
           title: "密码",
-          icon: "iconshare",
+          icon: "el-icon-delete",
           routerType:'leftMenu'
         },
         component: () => import("@/view/user/pwd")
@@ -84,7 +84,7 @@ export const asyncRouterMap = [
         name: "modify",
         meta: {
           title: "修改信息",
-          icon: "iconshare",
+          icon: "el-icon-delete",
           routerType:'leftMenu'
         },
         component: () => import("@/view/user/modify")

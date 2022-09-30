@@ -8,10 +8,12 @@ import ElementUI from 'element-ui'
 import store from "@/store"
 Vue.config.productionTip = false
 Vue.use(ElementUI)
-import "@/assets/css/common.less"
+
 import('element-ui/lib/theme-chalk/index.css')
 
 import './components/iconSvg' // iconSvg
+import "./assets/css/common.less"
+import "./assets/css/theme.less"
 
 import '@/permission' // permission control
 

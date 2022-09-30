@@ -47,7 +47,7 @@
 
 <script>
   import logoImg from "@/assets/img/logo.png";
-  import bg from "@/assets/img/bg.jpg";
+  import bg from "@/assets/img/6308.jpg";
 
   import { login } from '@/api/user';
 
@@ -106,16 +106,15 @@
       position: absolute;
       width: 100%;
       height: 100%;
+      background-color: @loginBackgroungColor;
+      background: @loginBackgroundImg no-repeat center center ;
       background-size: 100% 100%;
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-color: #fff;
-      
+
       
   }
   .form_contianer{
       position: absolute;
-      background-color: #fff;
+      background: @loginFormColor;
       top: 40%;
       left: 50%;
       transform: translate(-50%,-50%);
@@ -137,19 +136,22 @@
           .title{
             font-size: 18px;
             font-weight: bold;
+            color:@loginFromTitleColor;
               i{
-                 color: #FF6C60;
+                 color: @loginErrorTip;
               }
           }
       }
   
       .loginForm{
-     
           .submit_btn{
               width: 100%;
               padding:13px 0;
               font-size: 16px;
               margin-top: 30px;
+              background:@loginBtnColor;
+              color:@loginFromTitleColor;
+              border: 1px solid @loginBtnColor;
           }
           .loginTips{
               position: absolute;
@@ -193,12 +195,7 @@
         transform: translate3d(0, -50px, 0);
         opacity: 0;
   }
-  .loginForm{
-      .el-button--primary{
-          background-color:#FF7C1A;
-          border:1px solid #FF7C1A;
-      }
-  }
+
   .sanFangArea{
       border-top: 1px solid #DCDFE6;
       padding: 10px 0;
