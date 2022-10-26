@@ -6,7 +6,7 @@
         :src="logo"
         alt="xxxx"
       />
-      <span class="title" v-show="sidebar.open">xx<i>西西</i></span>
+      <span class="title" v-show="sidebar.open">xx<i></i></span>
     </div>
     <div class="menu_center">
 
@@ -82,9 +82,9 @@ export default {
     return {
       logo: logoImg,
       menuObj: {
-        bgColor: "#fff",
-        textColor: "#666",
-        activeTextColor: "#ff6428",
+        bgColor: "#2f4050",
+        textColor: "#a7b1c2",
+        activeTextColor: "#fff",
       },
     };
   },
@@ -114,12 +114,12 @@ export default {
   },
 };
 </script>
-<style lang="less" >
+<style lang="less" scoped>
         @import '../assets/css/theme.less';
 
 .menu_page_top {
   width: 100%;
-  height: 60px;
+  height: 50px;
   align-items: center;
   justify-content: space-around;
   text-transform: uppercase;
@@ -146,17 +146,24 @@ export default {
     }
   }
 }
-
+.menu_center{
+  background-color:#2f4050 ;
+}
 .menu_center {
-  box-shadow: 0px 2px 5px 0px rgba(230, 224, 224, 0.5);
-  height: calc(100% - 60px);
+  // box-shadow: 0px 2px 5px 0px rgba(230, 224, 224, 0.5);
+  height: calc(100% - 50px);
 }
 
 .el-menu {
   border: 0 !important; //垂直时，去除右侧白边
 }
 .el-menu-vertical-demo:not(.el-menu--collapse) {
-  width: 180px;
-  min-width: 35px;
+  width: 200px;
+  min-width: 70px;
+}
+.el-menu-vertical-demo i{
+  font-size: 12px;
+  margin-right:0;
+
 }
 </style>

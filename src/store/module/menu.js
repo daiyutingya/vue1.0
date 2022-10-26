@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: DYT
+ * @Date: 2022-09-28 14:36:44
+ * @LastEditors: 
+ * @LastEditTime: 2022-10-26 16:11:05
+ */
 
 const types={
     HANDLE_LEFT_MENU:'HANDLE_LEFT_MENU',  // 收缩左侧菜单
@@ -6,11 +14,11 @@ const types={
 }
 const menu={
     state:{
-        minLeftMenuWidth:35,
-        maxLeftMenuWidth:180,
+        minLeftMenuWidth:70,
+        maxLeftMenuWidth:200,
         isCollapse:false,
         sidebar:{
-            with:180,
+            with:200,
             open:true
         }
     },

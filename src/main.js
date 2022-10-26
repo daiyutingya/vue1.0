@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: DYT
+ * @Date: 2022-09-28 10:52:29
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-10-26 15:59:25
+ */
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'

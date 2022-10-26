@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: DYT
+ * @Date: 2022-09-28 10:52:29
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-10-26 17:29:51
+ */
 import Vue from "vue";
 import Router from "vue-router";
 import Layout from "@/layout";
@@ -38,14 +46,14 @@ export const constantRouterMap = [
     component: Layout,
     meta: {
       title: "首页",
-      icon: "el-icon-delete",
+      icon: "el-icon-s-home",
     },
     children: [
       {
         path: "index",
         meta: {
           title: "首页",
-          icon: "el-icon-delete",
+          icon: "el-icon-s-home",
           routerType:'leftmenu'
         },
         component: () => import("@/view")
@@ -64,8 +72,8 @@ export const asyncRouterMap = [
     name: "user",
     component: Layout,
     meta: {
-      title: "个人中心",
-      icon: "el-icon-delete"
+      title: "管理系统",
+      icon: "el-icon-s-order"
     },
     noDropdown: false,
     children: [
@@ -73,8 +81,8 @@ export const asyncRouterMap = [
         path: "pwd",
         name: "pwd",
         meta: {
-          title: "密码",
-          icon: "el-icon-delete",
+          title: "模板管理",
+          icon: "el-icon-s-order",
           routerType:'leftMenu'
         },
         component: () => import("@/view/user/pwd")
@@ -83,8 +91,40 @@ export const asyncRouterMap = [
         path: "modify",
         name: "modify",
         meta: {
-          title: "修改信息",
-          icon: "el-icon-delete",
+          title: "规格管理",
+          icon: "el-icon-s-tools",
+          routerType:'leftMenu'
+        },
+        component: () => import("@/view/user/modify")
+      }
+    ]
+  },
+  {
+    path: "/sys",
+    name: "sys",
+    component: Layout,
+    meta: {
+      title: "应用系统",
+      icon: "el-icon-s-order"
+    },
+    noDropdown: false,
+    children: [
+      {
+        path: "pwd",
+        name: "pwd",
+        meta: {
+          title: "MQC点检",
+          icon: "el-icon-s-order",
+          routerType:'leftMenu'
+        },
+        component: () => import("@/view/user/pwd")
+      },
+      {
+        path: "modify",
+        name: "modify",
+        meta: {
+          title: "MQC记录",
+          icon: "el-icon-s-tools",
           routerType:'leftMenu'
         },
         component: () => import("@/view/user/modify")

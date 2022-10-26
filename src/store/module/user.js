@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: DYT
+ * @Date: 2022-09-28 14:36:38
+ * @LastEditors: 
+ * @LastEditTime: 2022-10-26 17:02:42
+ */
 
 import * as mUtils from '@/utils/mUtils'
 import { logout ,getUserInfo } from '@/api/user'  // 导入用户信息相关接口
@@ -10,7 +18,7 @@ const user  = {
     avatar:'',
     token: getToken('Token'),
     roles: [],
-    browserHeaderTitle: mUtils.getStore('browserHeaderTitle') || '小爱Admin'
+    browserHeaderTitle: mUtils.getStore('browserHeaderTitle') || 'E-MQC系统'
   },
   getters : {
     token: state => state.token,

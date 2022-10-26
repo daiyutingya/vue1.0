@@ -1,8 +1,13 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: DYT
+ * @Date: 2022-09-28 10:59:17
+ * @LastEditors: 
+ * @LastEditTime: 2022-10-25 15:34:21
+ */
 const { resolve } = require('path')
 
-/*
-    根据Vue Cli配置的一些常用配置项, 具体参考(https://cli.vuejs.org/zh/config/#pages)
-*/
 module.exports = {
   productionSourceMap: false, // 生成环境是否开启SourceMap(source map的作用就是定位。source map定位的时浏览器控制台输出语句在项目文件的位置。)
   filenameHashing: false, // build之后生成的静态资源默认情况下加了hash值以控制静态资源的缓存，默认是true

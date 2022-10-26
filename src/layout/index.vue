@@ -3,7 +3,7 @@
     <left-menu/>
     <div class="home_center wflex cflex">
       <head-nav />
-      <router-view  class="wflex"/>
+      <router-view  class="wflex center" />
       <foot-nav />
     </div>
   </div>
@@ -30,5 +30,15 @@ export default {
 .home{
   width: 100%;
   height: 100%; 
+  .home_center{
+    background-color: #f3f3f4;
+    .center{
+      margin: 10px 18px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 1px 1px 3px rgb(0 0 0 / 20%);
+    }
+
+  }
 }
 </style>
